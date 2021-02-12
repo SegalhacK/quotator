@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quotes</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+
+<body class="bg-secondary">
+        <h1 class="text-center m-3">Here are the awesome quotes:</h1>
+        <% for (let cita of quotes) { %>
+            <div class="card col-2 m-3 d-inline-block rounded" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><%=cita.quote%></h5>
+                    <p class="card-text"><%=cita.author%></p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <% } %>
+    </div>
+    <script src="/static/bootstrap.js"></script>
+</body>
+
+</html>

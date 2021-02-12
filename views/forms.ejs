@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+    <h1 class="text-center m-3">Welcome to the Quotator</h1>
+
+    <form action="/quotes" method="POST">
+        <div class="mb-3 col-6 offset-3">
+            <label for="nombre" class="form-label">Author</label>
+            <input name="author" type="text" class="form-control" id="nombre">
+        </div>
+        <div class="mb-3 col-6 offset-3">
+            <label class="form-label">Quote</label>
+            <textarea name="quote" class="form-control" id="mensaje"></textarea>
+        </div>
+        <div class="mb-3 col-6 offset-3">
+            <button type="submit" id="submit" class="btn btn-primary center-block mx-auto">Submit</button>
+            <a href="/quotes"></a><button class="btn btn-secondary mx-auto">Ver citas</button></a>
+        </col>
+    </form>
+
+
+    <script src="/static/bootstrap.js"></script>
+</body>
+
+</html>
